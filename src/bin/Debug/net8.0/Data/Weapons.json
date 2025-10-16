@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 0,
+    "Name": "Espada de Ferro",
+    "Attack": 3,
+    "Damage": 3,
+    "Range": 0,
+    "Speed": 0,
+    "Type": "Melee"
+  },
+  {
+    "Id": 1,
+    "Name": "Adaga de Ferro",
+    "Attack": 4,
+    "Damage": 2,
+    "Range": 0,
+    "Speed": 0,
+    "Type": "Melee"
+  },
+  {
+    "Id": 2,
+    "Name": "Arco Simples",
+    "Attack": 3,
+    "Damage": 2,
+    "Range": 2,
+    "Speed": 0,
+    "Type": "Ranged"
+  },
+  {
+    "Id": 3,
+    "Name": "Martelo de Guerra Velho",
+    "Attack": 1,
+    "Damage": 4,
+    "Range": 0,
+    "Speed": 0,
+    "Type": "Melee"
+  },
+  {
+    "Id": 4,
+    "Name": "Lança Perdida",
+    "Attack": 3,
+    "Damage": 3,
+    "Range": 1,
+    "Speed": 0,
+    "Type": "Melee"
+  }
+]

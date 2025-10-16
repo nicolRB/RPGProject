@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 0,
+    "Name": "Slime",
+    "HP": 4,
+    "Attack": 2,
+    "Damage": 1,
+    "Defense": 1,
+    "Range": 0,
+    "Speed": 1
+  },
+  {
+    "Id": 1,
+    "Name": "Goblin",
+    "HP": 8,
+    "Attack": 2,
+    "Damage": 3,
+    "Defense": 1,
+    "Range": 1,
+    "Speed": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Rato Gigante",
+    "HP": 6,
+    "Attack": 2,
+    "Damage": 2,
+    "Defense": 2,
+    "Range": 0,
+    "Speed": 1
+  },
+  {
+    "Id": 3,
+    "Name": "Esqueleto",
+    "HP": 5,
+    "Attack": 4,
+    "Damage": 4,
+    "Defense": 3,
+    "Range": 2,
+    "Speed": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Zumbi",
+    "HP": 14,
+    "Attack": 1,
+    "Damage": 2,
+    "Defense": 2,
+    "Range": 0,
+    "Speed": 1
+  },
+  {
+    "Id": 5,
+    "Name": "Dragão",
+    "HP": 120,
+    "Attack": 6,
+    "Damage": 20,
+    "Defense": 6,
+    "Range": 1,
+    "Speed": 1
+  }
+]

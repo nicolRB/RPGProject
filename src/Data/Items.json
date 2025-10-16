@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 0,
+    "Name": "Frasco de Cura",
+    "Type": "Consumable",
+    "Effect": "Heal",
+    "Power": 4,
+    "Description": "Restaura 4 de HP"
+  },
+  {
+    "Id": 1,
+    "Name": "Poção de Cura",
+    "Type": "Consumable",
+    "Effect": "Heal",
+    "Power": 8,
+    "Description": "Restaura 8 de HP"
+  },
+  {
+    "Id": 2,
+    "Name": "Poção de Cura Avançada",
+    "Type": "Consumable",
+    "Effect": "Heal",
+    "Power": 12,
+    "Description": "Restaura 12 de HP"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "MaxHP": 20,
+  "CurrentHP": 20,
+  "Attack": 0,
+  "Damage": 0,
+  "Defense": 0,
+  "Speed": 2,
+  "Gold": 0,
+  "Inventory": {
+    "Items": [
+      {
+        "Id": 0,
+        "Quantity": 2
+      },
+      {
+        "Id": 1,
+        "Quantity": 1
+      }
+    ],
+    "Weapons": [
+      {
+        "Id": 0,
+        "Quantity": 1
+      },
+      {
+        "Id": 1,
+        "Quantity": 2
+      }
+    ]
+  }
+}

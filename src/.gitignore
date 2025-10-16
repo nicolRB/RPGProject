@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Cache e logs
+*.cache
+*.log
+
+# Backup
+*.bak

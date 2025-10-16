@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\RPGProject.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\src\\RPGProject.csproj",
       "projectName": "RPGProject",
-      "projectPath": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\RPGProject.csproj",
+      "projectPath": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\src\\RPGProject.csproj",
       "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\obj\\",
+      "outputPath": "C:\\Users\\Nicolas\\OneDrive\\Documentos\\ProjetosPessoais\\Jogos\\RPGProject\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

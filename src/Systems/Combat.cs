@@ -53,14 +53,14 @@ namespace RPGProject.Systems
                 {
                     Console.WriteLine("Escolha sua ação:");
                     Console.WriteLine(escapable
-                        ? "[1] - Atacar\n[2] - Defender\n[3] - Se Afastar\n[4] - Se Aproximar\n[5] - Escapar\n"
-                        : "[1] - Atacar\n[2] - Defender\n[3] - Se Afastar\n[4] - Se Aproximar\n");
+                        ? "[1] - Atacar\n[2] - Defender\n[3] - Se Afastar\n[4] - Se Aproximar\n[5] - Escapar"
+                        : "[1] - Atacar\n[2] - Defender\n[3] - Se Afastar\n[4] - Se Aproximar");
 
-                    string choice = Console.ReadLine();
+                    int choice = InputUtils.ChooseOption((escapable ? 5 : 4));
 
                     switch (choice)
                     {
-                        case "1":
+                        case 1:
                             Weapon? selectedWeapon = ChooseWeapon(ownedWeapons);
                             if (selectedWeapon == null)
                             {
@@ -106,13 +106,13 @@ namespace RPGProject.Systems
                             }
                             break;
 
-                        case "2":
+                        case 2:
                             defendingThisTurn = true;
                             Console.WriteLine($"\nVocê se prepara para aparar ataques futuros (+{parryValue} DEF temporário).\n");
                             turnDone = true;
                             break;
 
-                        case "3":
+                        case 3:
                             if (proximity < roomSize)
                             {
                                 proximity = Math.Min(roomSize, proximity + 2);
@@ -122,7 +122,7 @@ namespace RPGProject.Systems
                             else Console.WriteLine("\nVocê não pode se afastar mais.\n");
                             break;
 
-                        case "4":
+                        case 4:
                             if (proximity > 0)
                             {
                                 proximity = Math.Max(0, proximity - 2);
@@ -132,14 +132,10 @@ namespace RPGProject.Systems
                             else Console.WriteLine("\nVocê já está frente a frente.\n");
                             break;
 
-                        case "5":
-                            if (escapable)
-                            {
-                                Console.WriteLine("\nVocê fugiu do combate!");
-                                combatEnded = true;
-                                turnDone = true;
-                            }
-                            else Console.WriteLine("Ação inválida!");
+                        case 5:
+                            Console.WriteLine("\nVocê fugiu do combate!");
+                            combatEnded = true;
+                            turnDone = true;
                             break;
 
                         default:
@@ -223,15 +219,14 @@ namespace RPGProject.Systems
                     Console.WriteLine($"[{i + 1}] - {inventory[i].Name}");
 
                 int punhos = inventory.Count + 1;
-                int cancel = inventory.Count + 2;
 
-                Console.WriteLine($"[{punhos}] - Punhos\n[{cancel}] - Cancelar");
-                int choice = InputUtils.ChooseOption(cancel);
+                Console.WriteLine($"[{punhos}] - Punhos\n[0] - Cancelar");
+                int choice = InputUtils.ChooseOptionAllowZero(punhos);
 
                 if (choice == punhos)
                     return new Weapon { Name = "Punhos", Attack = 1, Damage = 1, Range = 0 };
 
-                if (choice == cancel)
+                if (choice == 0)
                     return null;
 
                 if (choice >= 1 && choice <= inventory.Count)

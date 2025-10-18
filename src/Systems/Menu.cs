@@ -21,23 +21,23 @@ namespace RPGProject.Systems
                 Console.WriteLine("\nEscolha seu caminho:");
                 Console.WriteLine("[1] - Masmorra Infinita (em desenvolvimento)");
                 Console.WriteLine("[2] - Escolher inimigo (modo criativo)");
-                Console.WriteLine("[3] - Sair\n");
+                Console.WriteLine("[3] - Sair");
 
-                string? choice = Console.ReadLine();
+                int choice = InputUtils.ChooseOption(3);
 
                 switch (choice)
                 {
-                    case "1":
+                    case 1:
                         Console.WriteLine("\nMasmorra Infinita ainda não implementada.");
                         Console.WriteLine("Pressione qualquer tecla para voltar...");
                         Console.ReadKey();
                         break;
 
-                    case "2":
+                    case 2:
                         CreativeMode.Start();
                         break;
 
-                    case "3":
+                    case 3:
                         running = false;
                         Console.WriteLine("\nSaindo do jogo...");
                         Console.WriteLine("Pressione qualquer tecla para fechar.");
@@ -46,7 +46,7 @@ namespace RPGProject.Systems
                         break;
 
                     default:
-                        Console.WriteLine("Escolha inválida. Pressione qualquer tecla para tentar novamente.");
+                        Console.WriteLine("\n<Erro de input>\n");
                         Console.ReadKey();
                         break;
                 }

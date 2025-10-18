@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace RPGProject.Utils
 {
@@ -15,7 +16,7 @@ namespace RPGProject.Utils
                 if (int.TryParse(input, out value))
                     return value;
 
-                Console.WriteLine("Entrada inválida. Digite um número.");
+                Console.WriteLine("\n<Entrada inválida. Digite um número>");
             }
         }
 
@@ -26,9 +27,37 @@ namespace RPGProject.Utils
             {
                 choice = ReadInt(message);
                 if (choice < 1 || choice > range)
-                    Console.WriteLine($"Escolha um número entre 1 e {range}.");
+                    Console.WriteLine($"\n<Escolha um número entre 1 e {range}>");
             }
             while (choice < 1 || choice > range);
+
+            return choice;
+        }
+
+        public static int ChooseOptionAllowZero(int range, string message = "\n")
+        {
+            int choice;
+            do
+            {
+                choice = ReadInt(message);
+                if (choice < 0 || choice > range)
+                    Console.WriteLine($"\n<Escolha um número entre 0 e {range}>");
+            }
+            while (choice < 0 || choice > range);
+
+            return choice;
+        }
+
+        public static int ChooseValue(string message = "\n")
+        {
+            int choice;
+            do
+            {
+                choice = ReadInt(message);
+                if (choice < 0)
+                    Console.WriteLine($"\n<Escolha um número positivo>");
+            }
+            while (choice < 0);
 
             return choice;
         }
